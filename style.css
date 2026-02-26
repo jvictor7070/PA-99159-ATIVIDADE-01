@@ -19,6 +19,7 @@ img {
     margin: 10px auto;
     display: block;
 }
+<<<<<<< HEAD
 
 h1 {
     text-align: center;
@@ -51,3 +52,9 @@ a {
     color: white;
     text-align: center;
 }
+=======
+body.dark-mode {
+    background-image: url('assets/asta-demon-dark.png');
+    
+}
+>>>>>>> 6e3a8cb689e708c09860e4c54279826ed6052cdc
