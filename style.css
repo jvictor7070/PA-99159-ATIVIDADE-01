@@ -34,7 +34,7 @@ img {
 h1 {
     font-size: 3em;
     margin: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -74,7 +74,7 @@ button:hover {
 
 /* Ajuste para o link dentro do botão */
 button a {
-    color: white;
+    color: rgb(240, 239, 245);
     text-decoration: none;
     display: inline-block;
 }
