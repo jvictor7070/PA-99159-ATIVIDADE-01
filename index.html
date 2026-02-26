@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Black Clover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="assets/logo.png" alt="Logo" class="logo">
+
+    <h1>Black Clover</h1>
+
+    <div class="content">
+        <p>Black Clover é um anime e mangá criado por Yūki Tabata. A história segue Asta, um jovem órfão que vive em um mundo onde a magia é tudo. Apesar de nascer sem habilidades mágicas, Asta sonha em se tornar o Rei Mago, o mago mais poderoso do reino. Ele é acompanhado por seu rival e amigo de infância, Yuno, que é um prodígio mágico. Juntos, eles enfrentam desafios e inimigos enquanto buscam alcançar seus objetivos.</p>
+    </div>
+
+    <div class="btn-container">
+        <a href="Segunda-pagina.html" class="btn">Segunda Página</a>
+        <button id="darkModeToggle" class="btn">Modo Escuro</button>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        const btn = document.getElementById('darkModeToggle');
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            
+            // Troca o texto do botão para ficar mais interativo
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = "Modo Claro";
+            } else {
+                btn.textContent = "Modo Escuro";
+            }
+        }
+        
+        btn.addEventListener('click', toggleDarkMode);
+    </script>
+
+</body>
+</html>
