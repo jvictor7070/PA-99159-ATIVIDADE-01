@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" type="image/x-icon" href="assets_2/logo.png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+
+<body>
+    <img src="assets_2/logo.png" alt="Logo Monster">
+
+    <h1>Monster</h1>
+
+
+    <p>Monster é um anime e mangá criado por Naoki Urasawa. A história segue Dr. Kenzo Tenma, um neurocirurgião talentoso que salva a vida de um jovem garoto chamado Johan Liebert. No entanto, após o procedimento, uma série de assassinatos brutais começam a ocorrer, e Tenma se vê envolvido em uma conspiração que o leva a perseguir Johan, que se torna um serial killer. A trama explora temas de moralidade, identidade e o lado sombrio da natureza humana.</p>
+
+   
+ <div class="btn-container">
+        <button><a href="segunda_pagina.html" class="btn">voltar a segunda página</a></div></button>
+        <button id="darkModeToggle" class="btn">Modo Escuro</button>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        const btn = document.getElementById('darkModeToggle');
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            
+            // Troca o texto do botão para ficar mais interativo
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = "Modo Claro";
+            } else {
+                btn.textContent = "Modo Escuro";
+            }
+        }
+        
+        btn.addEventListener('click', toggleDarkMode);
+    </script>
+
+</body>
+</html>

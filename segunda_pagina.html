@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on titan</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="assets_2/logo.png">
+</head>
+<body>
+    <img src="assets_2/logo.png" alt="Attack on Titan Logo">
+
+    <h1>Attack on Titan</h1>
+
+    <p>Attack on Titan é um anime e mangá criado por Hajime Isayama. A história se passa em um mundo onde a humanidade vive cercada por muralhas para se proteger de gigantes devoradores de humanos conhecidos como Titãs. O protagonista, Eren Yeager, junto com seus amigos Mikasa Ackerman e Armin Arlert, se juntam à Tropa de Exploração para lutar contra os Titãs e descobrir a verdade por trás de sua existência.</p>
+
+ <div class="btn-container">
+        <button><a href="index.html" class="btn">voltar a primeira Página</a></div></button>
+        <button><a href="terceira_pagina.html" class="btn">terceira Página</a></div></button>
+        <button id="darkModeToggle" class="btn">Modo Escuro</button>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        const btn = document.getElementById('darkModeToggle');
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            
+            // Troca o texto do botão para ficar mais interativo
+            if (document.body.classList.contains('dark-mode')) {
+                btn.textContent = "Modo Claro";
+            } else {
+                btn.textContent = "Modo Escuro";
+            }
+        }
+        
+        btn.addEventListener('click', toggleDarkMode);
+    </script>
+
+</body>
+</html>
